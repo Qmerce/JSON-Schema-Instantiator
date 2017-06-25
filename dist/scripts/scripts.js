@@ -151,3 +151,11 @@ if (typeof module !== 'undefined') {
     instantiate: instantiate
   };
 }
+
+'use strict';
+
+angular.module('schemaInstantiator', [])
+
+  .service('InstantiatorService', function InstantiatorService() {
+    this.instantiate = instantiate;
+  });
